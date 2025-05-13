@@ -43,4 +43,3 @@ cdef extern from "dubins.h":
     cdef double dubins_segment_length_normalized(DubinsPath* path, int i)
     cdef int dubins_path_endpoint(DubinsPath* path, double q[3])
     cdef int dubins_extract_subpath(DubinsPath* path, double t, DubinsPath* newpath);
-
