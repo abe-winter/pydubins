@@ -1,0 +1,16 @@
+[project]
+name = "dubins"
+version = "1.0.1"
+description = "Code to generate and manipulate dubins curves"
+readme = "README.rst"
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "Cython"]
+
+[tool.setuptools]
+packages = []
+ext-modules = [
+  {name = "example", sources = ["dubins/src/dubins.c", "dubins/dubins.pyx"], include-dirs = ["dubins/include"]}
+]
