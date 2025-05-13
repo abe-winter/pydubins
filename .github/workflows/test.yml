@@ -15,6 +15,7 @@ jobs:
       with:
         python-version: ${{ matrix.version }}
     - name: build
+      # todo: use https://github.com/pypa/cibuildwheel for manylinux
       run: pip wheel .
     - uses: actions/upload-artifact@v4
       with:
