@@ -15,4 +15,8 @@ jobs:
       with:
         python-version: ${{ matrix.version }}
     - name: build
-      run: pip install .
+      run: pip wheel .
+    - uses: actions/upload-artifact@v4
+      with:
+        name: wheel-${{ matrix.version }}
+        path: '*.whl'
