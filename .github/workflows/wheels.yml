@@ -2,6 +2,7 @@ on:
   push:
   workflow_dispatch:
 
+# from https://github.com/pypa/cibuildwheel?tab=readme-ov-file#example-setup
 jobs:
   build:
     strategy:
