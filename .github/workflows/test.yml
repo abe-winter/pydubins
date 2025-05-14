@@ -16,4 +16,4 @@ jobs:
     - name: build
       run: pip install .
     - name: test
-      run: python -m unittest tests/test-dubins.py
+      run: python -m unittest --verbose tests/test-dubins.py
